@@ -56,18 +56,14 @@ HEADERS 	= $(INCL_DIR)/libft.h
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	ar -rcs $@ $(OBJ) 
-
-bonus: $(OBJ) $(OBJ_BONUS)
+$(NAME): $(OBJ) $(OBJ_BONUS)
 	ar -rcs libft.a $^
 
-%.o: $(SRCS_DIR)/%.c $(HEADERS)
+%.o: $(SRCS_DIR)/%.c $(HEADERS) Makefile
 	$(CC) $(CFLAGS) -o $@ -g -c $<
 
 clean:
 	rm -f *.o
-
 
 fclean: clean
 	rm -f libft.a
