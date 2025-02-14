@@ -6,15 +6,13 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 15:41:54 by dazzali           #+#    #+#             */
-/*   Updated: 2025/02/14 10:50:05 by dazzali          ###   ########.fr       */
+/*   Updated: 2024/12/29 15:53:31 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stddef.h>
-# include <stdarg.h>
-# include <stdbool.h>
 
 typedef struct s_list
 {
@@ -65,16 +63,4 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 int		ft_lstsize(t_list *lst);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
-int		ft_print_cursor(char **cursor,
-			const char **fmt, int *b_pr, va_list args);
-int		ft_printf(const char *fmt, ...);
-int		ft_print_pointer(void *ptr);
-int		ft_print_int(int i);
-int		ft_putnbr_base(unsigned long long nbr, char *base);
-int		ft_print_hex(unsigned int nbr, bool upper);
-int		ft_print_unsigned(unsigned int i);
-int		ft_print_str(char *s);
-int		ft_print_char(char c);
-int		ft_print_int(int i);
-int		print_formatted_argument(va_list args, char fmt);
 #endif
