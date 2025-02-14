@@ -6,10 +6,10 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 18:36:28 by dazzali           #+#    #+#             */
-/*   Updated: 2025/02/04 13:21:20 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/02/14 11:10:12 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "ft_printf.h"
+#include "libft.h"
 
 int	ft_print_pointer(void *ptr)
 {

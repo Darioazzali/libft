@@ -6,11 +6,11 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 12:08:55 by dazzali           #+#    #+#             */
-/*   Updated: 2025/02/04 15:10:15 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/02/14 11:14:51 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 #define MAX_LEN 1024
 

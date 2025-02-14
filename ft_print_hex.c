@@ -6,11 +6,11 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 18:37:23 by dazzali           #+#    #+#             */
-/*   Updated: 2025/02/04 15:06:01 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/02/14 11:10:02 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 int	ft_print_hex(unsigned int nbr, bool upper)
 {

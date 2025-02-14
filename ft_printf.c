@@ -6,11 +6,11 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 10:16:08 by dazzali           #+#    #+#             */
-/*   Updated: 2025/02/06 12:35:20 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/02/14 11:09:23 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 int	ft_printf(const char *fmt, ...)
 {

@@ -6,15 +6,19 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 15:41:54 by dazzali           #+#    #+#             */
-/*   Updated: 2025/02/14 10:50:05 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/02/14 11:14:32 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stddef.h>
+# include <unistd.h>
 # include <stdarg.h>
+# include <unistd.h>
 # include <stdbool.h>
+# include <stdint.h>
+# include <stdlib.h>
 
 typedef struct s_list
 {
