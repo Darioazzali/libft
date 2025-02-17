@@ -1,4 +1,2 @@
-*
-!ft_*
-!libft.h
-!Makefile
+*.o
+libft.a

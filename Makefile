@@ -51,7 +51,9 @@ SRCS		:=	$(SRCS_DIR)/ft_isalpha.c \
 				$(SRCS_DIR)/ft_printf_utils.c \
 				$(SRCS_DIR)/ft_putnbr_base.c \
 				$(SRCS_DIR)/ft_print_hex.c \
-				$(SRCS_DIR)/ft_print_unsigned.c
+				$(SRCS_DIR)/ft_print_unsigned.c \
+				$(SRCS_DIR)/get_next_line.c \
+				$(SRCS_DIR)/get_next_line_utils.c 
 		
 OBJ				:= $(SRCS:$(SRCS_DIR)/%.c=%.o)
 HEADERS 		= $(INCL_DIR)/libft.h

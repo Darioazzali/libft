@@ -6,7 +6,7 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 15:41:54 by dazzali           #+#    #+#             */
-/*   Updated: 2025/02/14 11:14:32 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/02/17 07:48:50 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,10 @@
 # include <stdbool.h>
 # include <stdint.h>
 # include <stdlib.h>
+
+# ifndef GNL_BUFFER_SIZE
+#  define GNL_BUFFER_SIZE 1024
+# endif
 
 typedef struct s_list
 {
@@ -81,4 +85,6 @@ int		ft_print_str(char *s);
 int		ft_print_char(char c);
 int		ft_print_int(int i);
 int		print_formatted_argument(va_list args, char fmt);
+char	*__ft_next_line(char *buf);
+char	*get_next_line(int fd);
 #endif
