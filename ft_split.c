@@ -13,6 +13,20 @@
 #include "libft.h"
 #include <stdlib.h>
 
+/**
+ * @brief Split a string into an array of strings based on a delimiter.
+ *
+ * This function splits the string s into an array of strings using the delimiter
+ * c. If s is NULL, the function returns NULL. The function handles multiple
+ * consecutive delimiters and trims leading and trailing delimiters.
+ *
+ * @param s The string to split.
+ * @param c The delimiter character.
+ * @return An array of strings, or NULL if allocation fails.
+ * @note If s is NULL, the function returns NULL. The function handles multiple
+ *       consecutive delimiters and trims leading and trailing delimiters.
+ */
+
 static	size_t	count_words(char const *str, char sep)
 {
 	int	i;

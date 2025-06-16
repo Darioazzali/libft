@@ -10,6 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @brief Check for a digit (0 through 9).
+ *
+ * This function checks if the character c is a digit (0-9). It returns a
+ * non-zero value if c is a digit, and zero otherwise.
+ *
+ * @param c The character to check.
+ * @return Non-zero if c is a digit, zero otherwise.
+ */
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');

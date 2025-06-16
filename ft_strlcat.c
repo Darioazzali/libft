@@ -6,18 +6,25 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 15:45:38 by dazzali           #+#    #+#             */
-/*   Updated: 2024/12/27 18:02:23 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/06/16 13:55:26 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stddef.h>
 
-/*
- * rem_bytes-- are the remaining bytes after traversing dst.
- * the first times variable is used is only as a counter
- * so it has no meanings.
- * occup_bytes is the bytes already occupied by dst.
+/**
+ * @brief Concatenate two strings with size limitation.
+ *
+ * Appends the NUL-terminated string src to the end of dst.
+ * It will append at most size - strlen(dst) - 1 bytes,
+ * NUL-terminating the result.
+ *
+ * @param dst The destination buffer.
+ * @param src The source string.
+ * @param size The total size of the destination buffer.
+ * @return The total length of the string it tried to create:
+ *         initial length of dst plus the length of src.
  */
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

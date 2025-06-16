@@ -18,6 +18,18 @@ static bool	ft_iswhitespace(const char *s)
 	return ((*s >= '\t' && *s <= '\r') || *s == ' ');
 }
 
+/**
+ * @brief Convert a string to an integer.
+ *
+ * This function converts the string nptr to an integer. It skips leading
+ * whitespace, handles an optional sign, and stops at the first non-digit
+ * character.
+ *
+ * @param nptr The string to convert.
+ * @return The converted integer value.
+ * @note The function skips leading whitespace, handles an optional sign, and
+ *       stops at the first non-digit character.
+ */
 int	ft_atoi(const char *nptr)
 {
 	int	res;

@@ -38,6 +38,17 @@ static	size_t	ft_digit_n(int n)
 	return (digits);
 }
 
+/**
+ * @brief Convert an integer to a string.
+ *
+ * This function converts the integer n to a string representation. It handles
+ * negative numbers and the special case of INT_MIN. If allocation fails, the
+ * function returns NULL.
+ *
+ * @param n The integer to convert.
+ * @return A pointer to the resulting string, or NULL if allocation fails.
+ * @note The function handles negative numbers and the special case of INT_MIN.
+ */
 char	*ft_itoa(int n)
 {
 	char	*res;

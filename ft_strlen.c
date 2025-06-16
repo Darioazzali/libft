@@ -11,6 +11,12 @@
 /* ************************************************************************** */
 #include <stddef.h>
 
+/**
+ * @brief Calculate the length of a string.
+ *
+ * @param str The string whose length is to be calculated.
+ * @return The number of characters in the string, excluding the null terminator.
+ */
 size_t	ft_strlen(const char *str)
 {
 	size_t	len;

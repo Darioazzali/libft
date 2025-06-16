@@ -6,13 +6,25 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 15:44:50 by dazzali           #+#    #+#             */
-/*   Updated: 2024/12/31 16:15:18 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/06/16 13:54:57 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
+/**
+ * @brief Concatenate two strings.
+ *
+ * This function concatenates the strings s1 and s2 into a new string.
+ * If both s1 and s2 are empty strings, an empty string is returned.
+ * If allocation fails, the function returns NULL.
+ *
+ * @param s1 The first string.
+ * @param s2 The second string.
+ * @return A pointer to the concatenated string, or NULL if allocation fails.
+ * @note If both s1 and s2 are empty strings, an empty string is returned.
+ */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	s1_len;		

@@ -13,6 +13,18 @@
 #include "libft.h"
 #include <limits.h>
 
+/**
+ * @brief Write an integer to a file descriptor as a string.
+ *
+ * This function writes the integer n to the file descriptor fd as a string of
+ * characters. Handles negative numbers and the INT_MIN edge case.
+ *
+ * @param n The integer to write.
+ * @param fd The file descriptor to write to. If fd is invalid, the function will
+ *           fail silently (write will return -1).
+ * @note No error is reported if the write fails. The function does not check if
+ *       fd is valid or open for writing. Handles INT_MIN by recursive calls.
+ */
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == INT_MIN)

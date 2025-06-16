@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+ * @brief Apply a function to each element of a linked list.
+ *
+ * This function iterates over the list lst and applies the function f to the
+ * content of each element. If lst or f is NULL, the function does nothing.
+ *
+ * @param lst The beginning of the list.
+ * @param f The function to apply to each element's content.
+ * @note If lst or f is NULL, the function does nothing.
+ */
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)

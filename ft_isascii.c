@@ -10,6 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @brief Check for an ASCII character.
+ *
+ * This function checks if the character c is an ASCII character (0 to 127).
+ * It returns a non-zero value if c is ASCII, and zero otherwise.
+ *
+ * @param c The character to check.
+ * @return Non-zero if c is an ASCII character (0 to 127), zero otherwise.
+ */
 int	ft_isascii(int c)
 {
 	return (!(c & ~127));

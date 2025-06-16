@@ -12,6 +12,14 @@
 
 #include <stddef.h>
 
+/**
+ * @brief Fill a block of memory with a specific value.
+ *
+ * @param s Pointer to the memory area to fill.
+ * @param c Value to be set (converted to unsigned char).
+ * @param n Number of bytes to be set to the value.
+ * @return Pointer to the memory area s.
+ */
 void	*ft_memset(void *s, int c, size_t n)
 {
 	char	*ptr;

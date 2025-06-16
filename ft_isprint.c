@@ -10,6 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @brief Check for any printable character including space.
+ *
+ * This function checks if the character c is a printable character, including
+ * space. It returns a non-zero value if c is printable, and zero otherwise.
+ *
+ * @param c The character to check.
+ * @return Non-zero if c is a printable character, zero otherwise.
+ */
 int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);

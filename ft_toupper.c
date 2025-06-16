@@ -10,6 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @brief Convert a lowercase letter to uppercase.
+ *
+ * This function converts the lowercase letter c to its uppercase equivalent. If
+ * c is not a lowercase letter, it is returned unchanged.
+ *
+ * @param c The character to convert.
+ * @return The uppercase equivalent if c is a lowercase letter, otherwise c.
+ */
+
 static int	ft_is_lower(int c)
 {
 	if (c >= 'a' && c <= 'z')

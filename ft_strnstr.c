@@ -13,6 +13,21 @@
 #include <stddef.h>
 #include "libft.h"
 
+/**
+ * @brief Locate a substring in a string, limited by length.
+ *
+ * This function locates the first occurrence of the substring little in the
+ * string big, searching within the first len characters. If little is an empty
+ * string, big is returned. If len is 0, NULL is returned.
+ *
+ * @param big The string to be searched.
+ * @param little The substring to search for.
+ * @param len The maximum number of characters to search in big.
+ * @return A pointer to the first occurrence of little in big, or NULL if not
+ *         found.
+ * @note If little is an empty string, big is returned. If len is 0, NULL is
+ *       returned.
+ */
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	if (!*little)
