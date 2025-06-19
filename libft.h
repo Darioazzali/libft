@@ -6,7 +6,7 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 15:41:54 by dazzali           #+#    #+#             */
-/*   Updated: 2025/02/17 07:48:50 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/06/19 12:36:47 by aluque-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, int n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+void	*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *haystack, int needle);
