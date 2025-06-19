@@ -13,6 +13,7 @@ SRCS		:=	$(SRCS_DIR)/ft_isalpha.c \
 				$(SRCS_DIR)/ft_bzero.c \
 				$(SRCS_DIR)/ft_memcpy.c \
 				$(SRCS_DIR)/ft_memmove.c \
+				$(SRCS_DIR)/ft_realloc.c \
 				$(SRCS_DIR)/ft_strlcpy.c \
 				$(SRCS_DIR)/ft_strlcat.c \
 				$(SRCS_DIR)/ft_toupper.c \
