@@ -6,7 +6,7 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 10:16:08 by dazzali           #+#    #+#             */
-/*   Updated: 2025/07/28 11:32:09 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/07/28 11:40:58 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@ int	ft_fprintf(int fd, const char *fmt, ...)
 			if (res == -1)
 				return (-1);
 		}
-		++(sm.fmt);
+		else
+			++(sm.fmt);
 	}
 	res = write(fd, sm.cursor, sm.fmt - sm.cursor);
 	if (res == -1)
