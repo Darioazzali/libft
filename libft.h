@@ -6,7 +6,7 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 15:41:54 by dazzali           #+#    #+#             */
-/*   Updated: 2025/07/22 16:03:03 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/07/28 07:16:51 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,13 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }					t_list;
+
+typedef struct s_print_sm
+{
+	const char	*fmt;
+	char		*cursor;
+	int			printed;
+}	t_print_sm;
 
 int		ft_isalnum(int c);
 int		ft_isdigit(int c);
@@ -73,18 +80,17 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 int		ft_lstsize(t_list *lst);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
-int		ft_print_cursor(char **cursor,
-			const char **fmt, int *b_pr, va_list args);
 int		ft_printf(const char *fmt, ...);
-int		ft_print_pointer(void *ptr);
-int		ft_print_int(int i);
-int		ft_putnbr_base(unsigned long long nbr, char *base);
-int		ft_print_hex(unsigned int nbr, bool upper);
-int		ft_print_unsigned(unsigned int i);
-int		ft_print_str(char *s);
-int		ft_print_char(char c);
-int		ft_print_int(int i);
-int		print_formatted_argument(va_list args, char fmt);
+int		ft_fprintf(int fd, const char *fmt, ...);
+int		ft_print_pointer(int fd, void *ptr);
+int		ft_putnbr_base_fd(int fd, unsigned long long nbr, char *base);
+int		ft_print_hex(int fd, unsigned int nbr, bool upper);
+int		ft_print_unsigned(int fd, unsigned int i);
+int		ft_print_str(int fd, char *s);
+int		ft_print_char(int fd, char c);
+int		ft_print_int(int fd, int i);
+int		print_formatted_argument(int fd, va_list args, char fmt);
 char	*__ft_next_line(char *buf);
 char	*get_next_line(int fd);
+int		ft_print_cursor(int fd, t_print_sm *sm, va_list args);
 #endif
