@@ -6,7 +6,7 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 10:16:08 by dazzali           #+#    #+#             */
-/*   Updated: 2025/07/28 07:13:18 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/07/28 11:32:09 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,17 @@ int	ft_fprintf(int fd, const char *fmt, ...)
 		return (-1);
 	va_start(args, fmt);
 	_init_sm(&sm, fmt);
-	while (*fmt != '\0')
+	while (*sm.fmt != '\0')
 	{
-		if (*fmt == '%')
+		if (*sm.fmt == '%')
 		{
 			res = ft_print_cursor(fd, &sm, args);
 			if (res == -1)
 				return (-1);
 		}
-		++fmt;
+		++(sm.fmt);
 	}
-	res = write(fd, sm.cursor, fmt - sm.cursor);
+	res = write(fd, sm.cursor, sm.fmt - sm.cursor);
 	if (res == -1)
 		return (-1);
 	va_end(args);

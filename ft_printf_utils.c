@@ -6,7 +6,7 @@
 /*   By: dazzali <dazzali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 11:44:08 by dazzali           #+#    #+#             */
-/*   Updated: 2025/07/28 07:17:10 by dazzali          ###   ########.fr       */
+/*   Updated: 2025/07/28 11:37:07 by dazzali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,18 @@
 int	ft_print_cursor(int fd, t_print_sm *sm, va_list args)
 {
 	int	res;
+	int	text_len;
 
-	write(fd, sm->cursor, (sm->fmt - sm->cursor));
-	sm->printed += (sm->fmt)++ - sm->cursor;
+	text_len = sm->fmt - sm->cursor;
+	write(fd, sm->cursor, text_len);
+	sm->printed += text_len;
+	++(sm->fmt);
 	res = print_formatted_argument(fd, args, *(sm->fmt));
 	if (res == -1)
 		return (-1);
 	sm->printed += res;
-	sm->cursor = (char *)sm->fmt + 1;
+	++(sm->fmt);
+	sm->cursor = (char *)sm->fmt;
 	return (res);
 }
 
