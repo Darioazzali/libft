@@ -24,6 +24,7 @@ SRCS		:=	$(SRCS_DIR)/ft_isalpha.c \
 				$(SRCS_DIR)/ft_memcmp.c \
 				$(SRCS_DIR)/ft_strnstr.c \
 				$(SRCS_DIR)/ft_atoi.c \
+				$(SRCS_DIR)/ft_atof.c \
 				$(SRCS_DIR)/ft_calloc.c \
 				$(SRCS_DIR)/ft_strdup.c \
 				$(SRCS_DIR)/ft_substr.c \
